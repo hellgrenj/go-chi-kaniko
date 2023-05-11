@@ -12,11 +12,11 @@ sudo nano /etc/containers/registries.conf
 
 conf k3s:  (tweed is the hostname)  
 ``
- mirrors:
-  "tweed:5000":
-    endpoint:
-      - "http://tweed:5000"``  
-.. restart (sudo systemctl restart k3s)
+ mirrors:  
+  "tweed:5000":  
+    endpoint:  
+      - "http://tweed:5000"``    
+.. restart (sudo systemctl restart k3s)  
 
 start with:  
 ```./run.sh```  
