@@ -1,0 +1,1 @@
+skaffold run --default-repo=tweed:5000

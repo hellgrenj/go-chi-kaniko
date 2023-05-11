@@ -1,0 +1,1 @@
+skaffold dev --default-repo=tweed:5000  

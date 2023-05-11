@@ -1,0 +1,19 @@
+apiVersion: skaffold/v2beta21
+kind: Config
+metadata:
+  name: go-chi-kaniko
+build:
+  artifacts:
+    - image: go-chi-kaniko
+      context: .
+      kaniko:
+        cache: {}
+        insecure: true  # Allow pushing to insecure registry
+        insecurePull: true  # Allow pulling from insecure registry
+  cluster:
+    name: local
+    # pullSecretName: kaniko-secret  # Update with the correct secret name
+deploy:
+  kubectl:
+    manifests:
+      - server.yaml
