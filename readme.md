@@ -24,5 +24,5 @@ start with:
 dev (reload) with:  
 ```./dev.sh```  
 
-delete env with:
+delete env with:  
 ```./delete.sh```
