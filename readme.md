@@ -11,11 +11,12 @@ sudo nano /etc/containers/registries.conf
 .. restart (sudo systemctl restart podman)
 
 conf k3s:  (tweed is the hostname)  
-``
+```
  mirrors:  
   "tweed:5000":  
     endpoint:  
-      - "http://tweed:5000"``    
+      - "http://tweed:5000"
+```    
 .. restart (sudo systemctl restart k3s)  
 
 start with:  
